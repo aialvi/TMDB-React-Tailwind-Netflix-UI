@@ -83,6 +83,11 @@ function App() {
   return (
     <>
       <Movies title="Netflix originals" movies={originals} />
+      <Movies title="Trending" movies={trending} />
+      <Movies title="Now Playing" movies={nowPlaying} />
+      <Movies title="Popular" movies={popular} />
+      <Movies title="Top Rated" movies={topRated} />
+      <Movies title="Upcoming" movies={upcoming} />
     </>
   );
 }
