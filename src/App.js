@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Movies from "./components/Movies";
 import Hero from "./components/Hero";
+import Header from "./components/Header";
 
 const URL = "https://api.themoviedb.org/3";
 const API_KEY = process.env.REACT_APP_TOKEN;
@@ -83,6 +84,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <Hero movie={originals[Math.floor(Math.random() * originals.length)]} />
       <Movies title="Netflix originals" movies={originals} />
       <Movies title="Trending" movies={trending} />
