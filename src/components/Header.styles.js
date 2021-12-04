@@ -5,7 +5,6 @@ export const HeaderContainer = styled.div`
     flex
     justify-between
     p-4
-    fixed
     top-0
     w-full
     transition-all
