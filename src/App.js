@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Movies from "./components/Movies";
 
 const URL = "https://api.themoviedb.org/3";
 const API_KEY = process.env.REACT_APP_TOKEN;
@@ -81,7 +82,7 @@ function App() {
 
   return (
     <>
-      <h1>Hello world!</h1>
+      <Movies title="Netflix originals" movies={originals} />
     </>
   );
 }
